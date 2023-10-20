@@ -1,0 +1,73 @@
+
+main {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile-details {
+    text-align: left;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.profile-picture {
+    max-width: 200px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#profile-form {
+    text-align: center;
+    max-width: 400px; /* Ajusta según sea necesario */
+    margin: 50px auto; /* Ajusta según sea necesario */
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px; /* Valor para redondear las esquinas del botón */
+    display: block;
+    margin: 20px auto; /* Ajusta según sea necesario */
+}
+
+/* Opcional: Estilos para la imagen previa */
+#foto-preview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px; /* Ajusta según sea necesario */
+}

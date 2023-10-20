@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú lateral responsive - Kevin Pico</title>
+    <link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+    <div id="menu-container"></div>
+    <div class="contenido-perfil">
+        <h1>Datos del Perfil</h1>
+        <div class="profile-info">
+            <form id="profile-form">
+                <div class="profile-details">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="Username">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="username1@example.com">
+    
+                    <label for="carrera">Carrera:</label>
+                    <input type="text" id="carrera" name="carrera" value="Tecnología de la Información">
+    
+                    <label for="semestre">Semestre:</label>
+                    <input type="text" id="semestre" name="semestre" value="8vo">
+    
+                    <label for="periodo">Periodo Lectivo:</label>
+                    <input type="text" id="periodo" name="periodo" value="2023-2">
+                </div>
+                <div class="profile-picture">
+                    <label for="foto">Foto de perfil:</label>
+                    <input type="file" id="foto" name="foto" accept="image/*" onchange="previewImage()">
+                    <img id="foto-preview" src="image/avatar.png" alt="Foto de perfil usuario">
+                </div>
+    
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

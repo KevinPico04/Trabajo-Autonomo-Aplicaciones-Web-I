@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorias Titulacion | Kevin Pico</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">
+            <span class="logo-text" style="color: #7e1313;">Tutorías</span>
+            <span class="logo-text" style="color: #194d19;">Titulación</span>
+        </h2>
+        <nav class="navigation">
+            <a href="https://aulavirtual.uleam.edu.ec/auth/module.php/core/loginuserpass.php?AuthState=_c42a9d44f0212de2934b8077c1ea95b21976ee8e5a%3Ahttp%3A%2F%2Faulavirtual.uleam.edu.ec%2Fauth%2Fsaml2%2Fidp%2FSSOService.php%3Fspentityid%3Dhttp%253A%252F%252Faulavirtual.uleam.edu.ec%26cookieTime%3D1697760352%26RelayState%3Dhttp%253A%252F%252Faulavirtual.uleam.edu.ec%252Fxisce%252Fprincipal%252F">Aula Virtual</a>
+            <a href="https://www.uleam.edu.ec/contactos/">Contacto</a>
+            <button class="btnLogin-popup btnLogin-estudiante" value="estudiante">Estudiante</button>
+            <button class="btnLogin-popup btnLogin-tutor" value="tutor">Tutor</button>
+        </nav>
+    </header>
+    <div class="welcome-container">
+        <div class="welcome-box">
+                <div class="welcome-image">
+                    <img src="image/5d62e88278f4d471f1a1ad0c84ca7964-icono-de-calabaza-espeluznante.png" alt="Bienvenido al Sistema de Control de Tutorías de Titulación">
+                </div>
+            <h2>Bienvenido al Sistema de Control de Tutorías de Titulación</h2>
+            <img src="image/LOGO-ULEAM-300x216.png" alt="" class="logo-img">
+        </div>
+        
+        <div class="form-container">
+            <div class="wrapper">
+                <span class="icon-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </span>
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="" method="POST" id="login-form" onsubmit="event.preventDefault(); validateLogin();">
+                        <div class="input-box">
+                            <input type="email" id="email" required>
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <label>Correo</label>
+                        </div>
+        
+                        <div class="input-box">
+                            <input type="password" id="password" required>
+                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <label>Contraseña</label>
+                        </div>
+        
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Recuerdame</label>
+                            <a href="#">¿Has olvidado tu contraseña?</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-register">
+                            <p>¿No tienes una cuenta? <a href="#" class="register-link">Registrarse</a></p>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="form-box register">
+                    <h2>Registrate</h2>
+                    <form action="" method="POST" id="register-form" onsubmit="event.preventDefault(); validateRegister();">
+                        <div class="input-box">
+                            <input type="text"  id="name" required>
+                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <label>Nombre de usuario</label>
+                        </div>
+        
+                        <div class="input-box">
+                            <input type="email" id="register-email" required>
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <label>Correo</label>
+                        </div>
+        
+                        <div class="input-box">
+                            <input type="password" id="register-password" required>
+                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <label>Contraseña</label>
+                        </div>
+        
+                        <div class="remember-forgot">
+                            <label><input type="checkbox" required>Acepto los términos y condiciones</label>
+                        </div>
+                        <button type="submit" class="btn">Registro</button>
+                        <div class="login-register">
+                            <p>¿Ya tienes una cuenta? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/sesion.js"></script>
+</body>
+</html>

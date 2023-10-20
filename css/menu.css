@@ -1,0 +1,136 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #202020;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    z-index: 2;
+}
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #c5c5c5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.notification-icon {
+    margin-left: auto;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+nav.menu-lateral{
+    width: 110px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 6px
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+ul li.item-menu {
+    transition: .2s;
+    margin-bottom: 8px;
+    border-radius: 10px; /* Ajusta el radio del borde según sea necesario */
+    overflow: hidden; /* Asegura que el radio del borde se aplique correctamente */
+}
+
+ul li.ativo {
+    background-color: #929191;
+    border-radius: 10px; /* Ajusta el radio del borde según sea necesario */
+}
+
+ul li.item-menu:hover{
+    background: #929191;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 90px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    margin-left: -10px;
+}
+
+.logo-text {
+    color: #fff;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+
