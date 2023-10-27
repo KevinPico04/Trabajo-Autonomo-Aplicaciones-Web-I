@@ -127,6 +127,12 @@ header {
     background: #d2d0d0;
     color: #162938;
 }
+.error-message {
+    color: rgb(145, 63, 63);
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
 
 .wrapper {
     position: relative;
@@ -213,7 +219,7 @@ header {
     width: 100%;
     height: 50px;
     border-bottom: 2px solid #fff;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 .input-box label {

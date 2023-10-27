@@ -42,33 +42,43 @@ document.addEventListener('DOMContentLoaded', function () {
   
   
   estudianteButton.addEventListener('click', function () {
-    showLoginForm('home.html');
+    if (showLoginForm('home.html', 'login-form')) {
+      // Realiza la redirección solo si la validación es exitosa
+      window.location.href = 'home.html';
+    }
   });
 
   tutorButton.addEventListener('click', function () {
-    showLoginForm('homep.html');
+    if (showLoginForm('homep.html', 'login-form')) {
+      // Realiza la redirección solo si la validación es exitosa
+      window.location.href = 'homep.html';
+    }
   });
 
-  function showLoginForm(redirectURL) {
-    loginForm.style.display = 'block';
-    registerForm.style.display = 'block';
 
-    const loginSubmitButton = document.querySelector('#login-form .btn');
-    loginSubmitButton.addEventListener('click', function () {
-
-      window.location.href = redirectURL;
-    }); 
-
+  function showLoginForm(redirectURL, formId) {
+    // Obtén una referencia al formulario
+    const form = document.getElementById(formId);
+  
+    // Agrega un listener para el evento "submit" del formulario
+    form.addEventListener('submit', function (event) {
+      if (formId === 'login-form' && !validateLogin()) {
+        // Si es el formulario de inicio de sesión y la validación no pasa, evita la redirección
+        event.preventDefault();
+      } else if (formId === 'register-form' && !validateRegister()) {
+        // Si es el formulario de registro y la validación no pasa, evita la redirección
+        event.preventDefault();
+      } else {
+        // Realiza la redirección si la validación es exitosa
+        window.location.href = redirectURL;
+      }
+    });
   }
+  
+  // Resto de tu código
+  
     
 });
   
-  var registerForm = document.getElementById('register-form');
-  registerForm.addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    window.location.href = 'home.html';
-    window.location.href = 'homep.html';
-
-    
-  });
+ 
 
